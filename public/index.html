@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LED Matrix — Emoji Translator (Clean)</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <div class="screen">
+      <canvas id="matrix" width="1200" height="400"></canvas>
+    </div>
+    <section class="panel">
+      <div class="row">
+        <input id="text" class="input" placeholder="Type: happy face, sad face, heart, star, pizza ..." />
+        <button id="translate" class="btn">Translate</button>
+        <button id="clear" class="btn">Clear</button>
+        <label><input type="checkbox" id="live" checked> Live</label>
+      </div>
+      <div class="row">
+        <label>Test sprite
+          <select id="test">
+            <option value="">— pick one —</option>
+            <option value="face_happy">🙂 happy</option>
+            <option value="face_sad">☹️ sad</option>
+            <option value="face_neutral">😐 neutral</option>
+            <option value="heart">♥ heart</option>
+            <option value="star">★ star</option>
+            <option value="pizza">slice</option>
+          </select>
+        </label>
+        <label>Rows <input id="rows" type="number" value="20" min="12" max="40"></label>
+        <label>Cols <input id="cols" type="number" value="60" min="24" max="160"></label>
+        <label>Dot <input id="dot" type="number" value="16" min="6" max="24"></label>
+        <label>Gap <input id="gap" type="number" value="4" min="1" max="10"></label>
+        <label><input type="checkbox" id="glow" checked> Glow</label>
+      </div>
+      <p class="muted tiny">Improved 16×16 faces with centered placement so shapes look correct on the LED grid.</p>
+    </section>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
