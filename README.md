@@ -1,19 +1,15 @@
-# Emoji Translator
+### Reading Guide
 
-The Emoji Translator is a lightweight web tool that converts typed words or short phrases into pixel-based shapes and emojis displayed on a simulated flipdot grid (84×28 px, black & white, 15 fps).  
-This project was created to explore how well text and simple shapes can be translated into low-resolution visuals for the OWOW Flipdots Hub.
+Welcome to the Emoji Translator project.  
+This repository contains all the code, documentation, and development history for a tool that translates text into pixel-based emoji shapes for a simulated Flipdots display.
 
-## Live Demo
-[View the project on Render](https://emoji-translator-3w5m.onrender.com/)  
-Note: The site may take up to one minute to load due to free hosting on Render.
-
-## Technologies Used
-- HTML  
-- CSS  
-- JavaScript  
-- Canvas  
-
-## Project Structure
+To understand this project:
+1. Start with **README.md** – it explains the purpose, setup, and how to run the project.  
+2. Explore the **/public** and **/src** folders for the main logic and structure.  
+3. Review the **commit history** to see my development and iteration process.  
+4. Visit the **live demo** to see the translator in action:  
+   [https://emoji-translator-3w5m.onrender.com/](https://emoji-translator-3w5m.onrender.com/)  
+   *(Please allow up to one minute for the server to load.)*
 
 public/
 ├── index.html # Main application page
